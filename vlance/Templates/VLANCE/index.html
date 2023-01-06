@@ -22,5 +22,19 @@
         </nav>
        
         <p>It's a great day to be a Vlancer!</p>
+
+        {% for job in jobs%}
+            <div class="job">
+                <h2>{{job.task_name}}</h2>
+                <p>{{job.description}}</p>
+                <p>{{job.amount}}</p>
+                <p>{{job.email}}</p>
+                <p>{{job.deadline}}</p>
+                <p>{{job.date_posted}}</p>
+                <p>{{job.is_completed}}</p>
+                <p>{{job.provided_by}}</p>
+                <p>{{job.location}}</p>
+            </div>
+        {% endfor %}
     </body>
 </html>
