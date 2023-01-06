@@ -14,5 +14,5 @@ class Jobs(models.Model):
     location = models.CharField(max_length=50 , blank = False)
 
     def __str__(self):
-        return f"{self.Task_Name} - {self.Amount} - {self.Description} - {self.Date} - {self.email} - {self.provided_by} - {self.deadline} - {self.is_completed} - {self.location}"
+        return f"{self.task_Name} - {self.amount} - {self.description} - {self.date_posted} - {self.email} - {self.provided_by} - {self.deadline} - {self.is_completed} - {self.location}"
 
