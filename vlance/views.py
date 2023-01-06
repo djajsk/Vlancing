@@ -8,4 +8,4 @@ def index(request):
         "jobs": Jobs.objects.all()
     })
 def landing(request):
-    return render(request, "app/landing.html")
+    return render(request, "vlance/landing.html")
