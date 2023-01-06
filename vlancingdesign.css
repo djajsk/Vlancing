@@ -1,0 +1,165 @@
+body{
+    background-color: #000;
+    
+}
+div{
+    margin: 0%;
+    border-radius: 150px;
+    margin-left: 4%;
+    margin-right: 4%;
+
+}
+h1,h2,h3{
+    color:white;
+    margin: 0px;
+}
+#homeb{
+    position: static;
+    margin-left: 690px;
+}
+#aboutb{
+    position:absolute;
+    margin-left: 60px;
+    margin-top: 13.5px;
+}
+#serviceb{
+    position:relative;
+    margin-left: 200px;
+    margin-top: 13.5px;
+}
+#signb{
+    position:absolute;
+    margin-left: 50px;
+    margin-top: 13.5px;
+}
+.headername{
+    font-family: var(--font-family-base),"Helvetica Neue",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";;
+    font-size: 40px;
+    letter-spacing: -3.4px;
+    word-spacing: 3px;
+    color:white;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: capitalize;
+
+    display: inline-block;
+    margin-left: auto;
+    margin-top:auto
+    margin-left:50px;
+}
+.header{
+    background-color:black;
+    padding: 10px;
+    height: 80px;
+    background-size: cover;
+
+}
+.intro{
+    border-radius:100px ;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right,black,#EB455F ,#FCFFE7, #BAD7E9,#2B3467,black);
+    animation: gradient 15s ease infinite;
+
+    background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.about{
+    background-color: #FCFFE7;
+}
+.jobs{
+    background-color: #BAD7E9;
+}
+.contact{
+    background-color: #2B3467;
+}
+a.my-button{
+    margin-bottom: 40px;
+    margin-left: 1200px;
+    position:static;
+    background: linear-gradient(to right,#196BCA ,#6433E0);
+    background-color: #196BCA;
+    color: #fff;
+    font-family: Trebuchet MS;
+    font-size: 19px;
+    font-weight: 800;
+    font-style: normal;
+    text-decoration: none;
+    padding: 14px 15px;
+    border: 0px solid #000;
+    border-radius: 10px;
+    display: inline-block;
+   }
+   a.my-button:hover{
+    background: linear-gradient(to right,#5482d0 ,#7d5ee3);
+    background-color: #5482d0;
+   }
+   a.my-button:active{
+    transform: scale(0.95);
+   }
+
+.headingt {
+    font-family: var(--font-family-base),"Helvetica Neue",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";;
+    font-size: 60px;
+    letter-spacing: -3.4px;
+    word-spacing: 3px;
+    color:white;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    }
+    .headingt1 {
+        font-family: var(--font-family-base),"Helvetica Neue",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";;
+        
+        letter-spacing: -3.4px;
+        word-spacing: 3px;
+        color:white;
+        font-weight: 400;
+        text-decoration: none;
+        font-style: normal;
+        font-variant: small-caps;
+        text-transform: capitalize;
+        }
+
+        a.mybutton{
+            background: linear-gradient(to right,#196BCA ,#6433E0);
+            background-color: #196BCA;
+            color: #fff;
+            font-family: Trebuchet MS;
+            font-size: 19px;
+            font-weight: 800;
+            font-style: normal;
+            text-decoration: none;
+            padding: 14px 15px;
+            border: 0px solid #000;
+            border-radius: 100px;
+            display: inline-block;
+           }
+           a.mybutton:hover{
+            background: linear-gradient(to right,#5482d0 ,#7d5ee3);
+            background-color: #5482d0;
+           }
+           a.mybutton:active{
+            transform: scale(0.95);
+           }
+.img1{
+    border-radius: 250px;
+}
