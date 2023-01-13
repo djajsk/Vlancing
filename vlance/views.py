@@ -9,3 +9,9 @@ def index(request):
     })
 def landing(request):
     return render(request, "vlance/landing.html")
+
+def jobs(request, job_id):
+    jobs = Jobs.objects.get(id=job_id)
+    return render(request, "vlance/job.html", {
+        "jobs": jobs
+    })    
