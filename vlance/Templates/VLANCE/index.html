@@ -21,7 +21,7 @@
             <a class="mybutton" id="signb" href="#"><span></span>Sign Up!</a>
         </div>
 
- <div class="holder">   
+<div class="holder">   
 {% for job in jobs %}
  
     <div class="cards">
@@ -30,17 +30,17 @@
                 {{job.task_name}}
             </div>
             <div class="posted">
-                {{job.date_posted}}
+                Date : {{job.date_posted}}
             </div>
         </div>
         <div class="d2">
             <div class="amount">
-                {{job.amount}}
+                Amount : {{job.amount}}
             </div>
         </div>
         <div class="d3">
             <div class="deadline">
-                {{job.deadline}}
+                Deadline : {{job.deadline}}
             </div>
         </div>
         <div class="d4">

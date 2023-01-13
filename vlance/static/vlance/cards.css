@@ -4,7 +4,7 @@
     flex-wrap: wrap;
     justify-items: center;
     justify-content: center;
-    background-color: #2B3467;
+    background-image: url("/static/vlance/assets/again1.jpeg");
     margin-left: 5px;
     margin-right: 5px;
     margin: 0%;
@@ -16,11 +16,17 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 20px;
-    background: #BAD7E9;
+    background: rgba(255, 255, 255, .09);
     width: 300px;
     height: auto;
     border-radius: 15px;
     flex-direction: column;
+    border: #8C8C8C 2px solid;
+}
+
+.cards:hover {
+    transform: scale(1.07);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
 }
 
 .d1 {
@@ -64,8 +70,9 @@
     border-radius: 10px;
     padding: 10px;
     font-size: 15px;
-    color: #000;
-    background-color: beige;
+    color: whitesmoke;
+    font-weight: 600;
+    background: rgba(255, 255, 255, .12);
     
 }
 
@@ -77,24 +84,30 @@
     padding: 10px;
     font-size: 13px;
     color: black;
-    background-color: beige;
+    background: rgba(255, 255, 255, .12);
+    color: whitesmoke;
+    font-weight: 600;
 }
 
 .amount {
     height: auto;
     border-radius: 10px;
     padding: 10px;
-    background-color: beige;
+    background: rgba(255, 255, 255, .12);
+    color: whitesmoke;
+    font-weight: 600;
     
 }
 
 .deadline {
-    width: 30%;
+    width: 85%;
     height: auto;
     margin: 10px;
     border-radius: 10px;
     padding: 10px;
-    background-color: beige;
+    color: whitesmoke;
+    background: rgba(255, 255, 255, .12);
+    font-weight: 600;
 }
 
 .show-more {
@@ -108,4 +121,10 @@
     justify-content: center;
     align-content: center;
     font-size: 1.25vw;
+    background: linear-gradient(to right,#196BCA ,#6433E0);
+    
+}
+
+.show-more a{
+    text-decoration: none;
 }
