@@ -1,0 +1,111 @@
+.holder {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: center;
+    background-color: #2B3467;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin: 0%;
+    border-radius: 10px;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+    background: #BAD7E9;
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    flex-direction: column;
+}
+
+.d1 {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+
+.d2 {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    
+}
+
+.d3 {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.d4 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.name {
+    width: auto;
+    height: auto;
+    margin: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+    color: #000;
+    background-color: beige;
+    
+}
+
+.posted {
+    width: auto;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 13px;
+    color: black;
+    background-color: beige;
+}
+
+.amount {
+    height: auto;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: beige;
+    
+}
+
+.deadline {
+    width: 30%;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: beige;
+}
+
+.show-more {
+    width: auto;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    padding-top: 1.3%;
+    padding-left: 3%;
+    justify-content: center;
+    align-content: center;
+    font-size: 1.25vw;
+}

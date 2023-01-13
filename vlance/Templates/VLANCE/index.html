@@ -2,39 +2,70 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Vlancing</title>
+        <link rel="stylesheet" href="{% static 'vlance/landing.css' %}">
+        <link rel="shortcut icon" href="C:\Users\adity\AppData\Local\Temp\Temp1_favicon_io.zip\favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="{% static 'vlance/styles.css' %}">
+        <link rel="stylesheet" href="{% static 'vlance/cards.css' %}">
     </head>
     <body>
-        <nav>
-            <input type = "checkbox" id = "check">
-            <lable for = "check"class = "checkbtn">
-                <i class = "fas fa-bars"></i>
-            </lable>
-            <lable class = "logo">VLANCING</lable>
-            <ul>
-                <li><a  class = "active"href = "#">Home</a></li>
-                <li><a href = "#">About</a></li>
-                <li><a href = "#">Services</a></li>
-                <li><a href = "#">Contact</a></li>
-             
-            </ul>
-        </nav>
-       
-        <p>It's a great day to be a Vlancer!</p>
+        <div class="header">
+            <h1 class="headername">VLancing</h1>
+            
+            <a class="mybutton" id="homeb" href="{% url 'landing' %}">Home</a>
+            <a class="mybutton" id="aboutb" href="#">About</a>
+            <a class="mybutton" id="serviceb" href="#">Services</a>
+            <a class="mybutton" id="signb" href="#"><span></span>Sign Up!</a>
+        </div>
 
-        {% for job in jobs%}
-            <div class="job">
-                <h2>{{job.task_name}}</h2>
-                <p>{{job.description}}</p>
-                <p>{{job.amount}}</p>
-                <p>{{job.email}}</p>
-                <p>{{job.deadline}}</p>
-                <p>{{job.date_posted}}</p>
-                <p>{{job.is_completed}}</p>
-                <p>{{job.provided_by}}</p>
-                <p>{{job.location}}</p>
+ <div class="holder">   
+{% for job in jobs %}
+ 
+    <div class="cards">
+        <div class="d1">
+            <div class="name">
+                {{job.task_name}}
             </div>
-        {% endfor %}
+            <div class="posted">
+                {{job.date_posted}}
+            </div>
+        </div>
+        <div class="d2">
+            <div class="amount">
+                {{job.amount}}
+            </div>
+        </div>
+        <div class="d3">
+            <div class="deadline">
+                {{job.deadline}}
+            </div>
+        </div>
+        <div class="d4">
+            <a href="#" style="margin-left: 0px; font-size: 16px; color:#fff;">
+                <div class="show-more">Show more</div>
+            </a>
+        </div>
+
+    </div>
+{% endfor %}
+</div>
+
+<script>
+    function refreshPage() {
+        window.location.reload();
+    }
+    function myFunction() {
+        var x = document.getElementById("links");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
+
     </body>
 </html>
