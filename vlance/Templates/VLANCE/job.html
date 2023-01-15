@@ -11,10 +11,10 @@
     <body>
         <section class="header">
             <nav>
-                <a href="#"><img src="final.png"></a>
+                <a href="#"><img src="{% static 'vlance/assets/final.png'%}"></a>
                 <div class="nav-links">
                     <ul>
-                        <li><a href="#">HOME</a></li>
+                        <li><a href="% url 'landing' %}">HOME</a></li>
                         <li><a href="#">ABOUT</a></li>
                         <li><a href="#">LOGIN</a></li>
                         <li><a href="#">CONTACT</a></li>
@@ -22,36 +22,28 @@
             </nav>
             </div>
             <div class="text-box">
-                <img src="ff.png">
+                <img src="{% static 'vlance/assets/ff.png'%}">
                 <br>
                 <br>
                 <br>
                 </div>
                 <div class="job">
                 <h1 id="first">{{jobs.task_name}}</h1>
-                <h1 id="second"> budget : ₹ 400 to 500 Rupees</h1>
+                <h1 id="second"> Amount : {{jobs.amount}}</h1>
                 </div>
                 <br>
                 <br>
                         <div class="description">
-                    <h2>Slovenian Casino & Betting Writer  </h2>
-                    <h3>We are looking for Slovenian Casino & Betting writers who can write unique content in Slovenian.
-
-                        We are looking for someone who:
-                        
-                        -is experienced in writing online casino reviews, gambling content, slot reviews
-                        
-                        -has an excellent command of Slovenian.
-                        
-                        In case you are available for this position, please provide:
-                        
-                        - your rate/1k words
-                        
-                        - your portfolio</h3>
+                    <h2>Deadline : {{jobs.deadline}}  </h2>
+                    <h2>Date : {{jobs.date_posted}}  </h2>
+                    <h3>{{jobs.description}}</h3>
                         <h3 id="skill">
                             Skills: Article Writing, Ghostwriting, Copywriting, Content Writing, Slovenian Translator
                         </h3>
-                        <h3> Project id: 1335678</h3>
+                        <h3> Project id: {{jobs.id}}</h3>
+                        <h3> Email id: {{jobs.email}}</h3>
+                        <h3> Provided By: {{jobs.provided_by}}</h3>
+                        <h3> Provided By: {{jobs.location}}</h3>
                         </div>
                         <div class="other"><h2> Similar jobs</h2>
                             <ul>
