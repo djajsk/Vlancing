@@ -43,18 +43,16 @@
                         <h3> Project id: {{jobs.id}}</h3>
                         <h3> Email id: {{jobs.email}}</h3>
                         <h3> Provided By: {{jobs.provided_by}}</h3>
-                        <h3> Provided By: {{jobs.location}}</h3>
+                        <h3> Location: {{jobs.location}}</h3>
                         </div>
                         <div class="other"><h2> Similar jobs</h2>
+                            
                             <ul>
-                                <li><a href="#">AI expert need (€12-18 EUR / hour)</a></li>
-                                <li><a href="#">I am looking for a ROBLOX coder / scripter / Builder ($2-3 USD / hour)</a></li>
-                                <li><a href="#">Design Logo ($15-25 USD / hour)</a></li>
-                                <li><a href="#">Realestate listing website ($250-750 USD)</a></li>
-                                <li><a href="#">a ecommerce website (₹1500-12500 INR)</a></li>
-                                <li><a href="#">Logo for company (₹2000 INR)</a></li>
-                                <li><a href="#">Build me a professional logo ($10-30 USD)</a></li>
+                                {% for work in works %}
+                                <li><a href="#">{{work.task_name}}</a></li>
+                                {% endfor %}
                             </ul>
+                            
                     </div>
                     <br>
                     <br>
