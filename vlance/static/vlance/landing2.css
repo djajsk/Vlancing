@@ -1,13 +1,10 @@
-html{
-    scroll-behavior: smooth;
-}
 body{
     background-color: #000;
     
 }
 div{
     margin: 0%;
-    border-radius: 50px;
+    border-radius: 150px;
     margin-left: 4%;
     margin-right: 4%;
 
@@ -34,7 +31,6 @@ h1,h2,h3{
     position:absolute;
     margin-left: 50px;
     margin-top: 13.5px;
-    font-size: 17px;
 }
 .headername{
     font-family: var(--font-family-base),"Helvetica Neue",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";;
@@ -50,29 +46,22 @@ h1,h2,h3{
 
     display: inline-block;
     margin-left: auto;
-    margin-top:auto
+    margin-top:auto;
     margin-left:50px;
 }
 .header{
     background-color:black;
     padding: 10px;
-    height: 70px;
+    height: 80px;
     background-size: cover;
-    position: sticky;
-    top: 0;
-    border-radius: 0;
-    margin: 0;
 
 }
-
 .intro{
     border-radius:100px ;
     background-color: red; /* For browsers that do not support gradients */
-    background-image: linear-gradient(to right,black,#6ECCAF,#A5F1E9 , #BAD7E9,#2B3467,black);
-}
-.intro:hover{
+    background-image: linear-gradient(to right,black,#EB455F ,#FCFFE7, #BAD7E9,#2B3467,black);
     animation: gradient 15s ease infinite;
-    background-image: linear-gradient(to right,black,#6ECCAF ,#A5F1E9, #BAD7E9,#2B3467,black);
+
     background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
 	height: 100vh;
@@ -92,13 +81,13 @@ h1,h2,h3{
 
 
 .about{
-    opacity: 1;
+    background-color: #FCFFE7;
 }
 .jobs{
     background-color: #BAD7E9;
 }
 .contact{
-    background-color: #495579;
+    background-color: #2B3467;
 }
 a.my-button{
     margin-bottom: 40px;
@@ -129,7 +118,7 @@ a.my-button{
     font-family: var(--font-family-base),"Helvetica Neue",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";;
     font-size: 60px;
     letter-spacing: -3.4px;
-    word-spacing: 4px;
+    word-spacing: 3px;
     color:white;
     font-weight: 400;
     text-decoration: none;
@@ -174,36 +163,3 @@ a.my-button{
 .img1{
     border-radius: 250px;
 }
-#hclass{
-    font-size: 30px;
-    padding: 20px;
-    word-spacing: 20px;
-
-}
-#gif2{
-    border-radius: 50px;
-}
-#aboutgif{
-        color: #91D8E4;
-        font-size: 120px;
-}
-.about{
-    
-    border-radius: 0%;
-    background-size: contain;
-    margin: 0%;
-    background-image: url("/static/vlance/assets/again1.jpeg");
-    min-height: 500px;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.about-para{
-    background: rgba(255, 255, 255, .06);
-    border-radius: 15px;
-    border: #8C8C8C 2px solid;
-}
-
