@@ -12,7 +12,8 @@ class Jobs(models.Model):
     deadline = models.DateField(blank = False)
     is_completed = models.BooleanField(default = False)
     location = models.CharField(max_length=50 , blank = False)
+    skills = models.CharField(max_length=50, default=None, blank = False )
 
     def __str__(self):
-        return f"{self.task_name} - {self.amount} - {self.description} - {self.date_posted} - {self.email} - {self.provided_by} - {self.deadline} - {self.is_completed} - {self.location}"
+        return f"{self.task_name} - {self.amount} - {self.description} - {self.date_posted} - {self.email} - {self.provided_by} - {self.deadline} - {self.is_completed} - {self.location} - {self.skills}"
 
