@@ -7,6 +7,6 @@ urlpatterns = [
     path('' , views.landing, name='landing'),
     path('<str:job_id>' , views.jobs, name='jobs'),
     path('login/', views.login_view, name='login'),
-    path('logout', views.logout_view, name='logout')
-    
+    path('logout', views.logout_view, name='logout'),
+    path('videocall/', views.videocall, name='videocall')
 ]

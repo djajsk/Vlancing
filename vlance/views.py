@@ -38,4 +38,7 @@ def login_view(request):
 def logout_view(request):
     logout(request)
     return render(request, "vlance/landing.html")
+
+def videocall(request):
+    return render(request, "vlance/videocall.html")    
          
